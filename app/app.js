@@ -126,7 +126,7 @@ function drawPointer () {
 
 function getGridSize () {
   var width = window.innerWidth;
-  var height = window.innerHeight - 100;
+  var height = window.innerHeight - 40;
 
   if (height < width) {
     canvasSize = height - (height % 100);

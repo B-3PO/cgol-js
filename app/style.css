@@ -1,0 +1,25 @@
+.container {
+  margin:0 auto;
+  position: relative;
+}
+
+.canvas {
+  cursor: default;
+  position:absolute;
+  left: 0;
+  top: 0;
+}
+
+.floatCanvas {
+  display:none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+#frameRateSlider {
+  vertical-align: middle;
+}

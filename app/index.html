@@ -3,55 +3,37 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>C.G.O.L</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet" type="text/css">
     <script src="/app.js"></script>
-
-    <style>
-      .container {
-        margin:0 auto;
-        position: relative;
-      }
-
-      .canvas {
-        cursor: default;
-        position:absolute;
-        left: 0;
-        top: 0;
-      }
-
-      .floatCanvas {
-        display:none;
-        position: fixed;
-        z-index: 99;
-        top: 0;
-        left: 0;
-        opacity: 0.4;
-        pointer-events: none;
-      }
-    </style>
   </head>
   <body>
-    <div style="padding-top:20px; padding-bottom: 20px;">
-      <button id="randomButton">Create Random Grid</button>
+
+    <!-- controlls -->
+    <div style="padding-top:6px; padding-bottom: 20px;">
+      <button id="randomButton">Random Grid</button>
       <button id="startButton">Play</button>
       <button id="pauseButton">Pause</button>
       <button id="clearButton">Clear</button>
       <span style="padding-left: 10px;">Box Size</span>
       <select id="rangeControl"></select>
 
-      <span style="padding-left: 10px;">Frame Rate</span>
+      <span style="padding-left: 16px;">Frame Rate</span>
       <input id="frameRateSlider" type="range" name="grade" min="1" max="30" value="6">
       <span id="frameRateLabel">6</span>
 
-      <span style="padding-left: 10px;">Frame Rate</span>
+      <span style="padding-left: 16px;">Shape</span>
       <select id="brushSelection"></select>
     </div>
 
+
+    <!-- grid  -->
     <div id="container" class="container">
       <canvas id="gridCanvas" class="canvas"></canvas>
       <canvas id="gameCanvas" class="canvas"></canvas>
     </div>
 
-
+    <!-- shape canvas  -->
     <canvas id="pointerCanvas" class="floatCanvas"></canvas>
   </body>
 </html>
