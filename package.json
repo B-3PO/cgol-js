@@ -1,0 +1,9 @@
+{
+  "name": "cgol-js",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-serve": "^1.4.0"
+  }
+}
